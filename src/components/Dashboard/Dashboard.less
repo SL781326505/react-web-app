@@ -1,0 +1,40 @@
+.layout {
+  .sider {
+    height: 100vh;
+    overflow: auto;
+    &::-webkit-scrollbar {display: none;}
+    .logo {
+      height: 50px;
+      color: #fff;
+      line-height: 50px;
+      text-align: center;
+      transition: all 0.28s ease;
+    }
+  }
+  .main-layout {
+    .header {
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+      padding: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+      .trigger {
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .user-menu {
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        right: 100px;
+      }
+    }
+  }
+  .content {
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+}
